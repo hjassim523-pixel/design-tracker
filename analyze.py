@@ -9,4 +9,5 @@ sorted_df = completed_projects.sort_values(by='price', ascending=False)
 print(total_price)
 print(completed_projects)
 print(sorted_df)
+ print(df.groupby("project_type")["price"].agg(["sum", "mean", "count"]))
  
